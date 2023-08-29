@@ -1,43 +1,435 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<html>
+<head>
+    <link rel="stylesheet" href="index.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/20c5629a29.js" crossorigin="anonymous"></script>
+</head>
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+<body>
+    <div id="sectionHome">
+        <div class="home-container">
+            <h1 class="home-heading">Welcome to Smart City</h1>
+            <p class="home-tagline">Live SMART & Keep Your CITY Smart</p>
+            <button class="home-button" onclick="display('sectionAbout')">Let's Get Started</button>
+        </div>
+    </div>
+    <div id="sectionAbout" class="container-1">
+        <div class="common-container">
+            <h1 class="about-heading">Introduction</h1>
+            <p class="about-description">A smart city is a technologically modern urban area that uses different
+                types of electronic methods and sensors to collect specific data.
+                Information gained from that data is used to manage assets, resources and services efficiently
+                in return, that data is used to improve operations across the city.
+                This includes data collected from citizens, devices, buildings and assets that is processed and analyzed
+                to monitor and manage traffic and transportation systems, power plants, utilities, water supply networks, waste,
+                criminal investigations, information systems, schools, libraries, hospitals, and other community services.
+            </p>
+        </div>
+        <div class="common-container">
+            <h1 class="facility-heading">Facilities</h1>
+            <p class="facility-para">The city will provide you following facilities with good infrastructure</p>
+            <div class="wrap-container">
+                <div class="card-container">
+                    <div class="facility-card-container">
+                        <img src='https://res.cloudinary.com/dwjs2oqq8/image/upload/v1686034843/Residential-building_vnxarl.webp' class="image-item" />
+                        <h1 class="item-heading">Residential</h1>
+                        <button class="view-more-button" onclick="display('sectionDetailedResidents')">View More
+                            <svg width="20px" height="20px" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="facility-card-container">
+                        <img src='https://res.cloudinary.com/dwjs2oqq8/image/upload/v1686034843/download_mknmok.jpg' class="image-item" />
+                        <h1 class="item-heading">Educational Instituition</h1>
+                        <button class="view-more-button" onclick="display('sectionDetailedEducation')">View More
+                            <svg width="20px" height="20px" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="facility-card-container">
+                        <img src='https://res.cloudinary.com/dwjs2oqq8/image/upload/v1686034843/Philburn_16_pv0kfc.jpg' class="image-item" />
+                        <h1 class="item-heading">Transportation</h1>
+                        <button class="view-more-button" onclick="display('sectionDetailedTransport')">View More
+                            <svg width="20px" height="20px" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="facility-card-container">
+                        <img src='https://res.cloudinary.com/dwjs2oqq8/image/upload/v1686034843/87724085-f7bb-43a4-b987-7f1674be2455_dmcqx1.jpg' class="image-item" />
+                        <h1 class="item-heading">Restaurant</h1>
+                        <button class="view-more-button" onclick="display('sectionDetailedRestaurant')"">View More
+                            <svg width="20px" height="20px" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="facility-card-container">
+                        <img src='https://res.cloudinary.com/dwjs2oqq8/image/upload/v1686034843/download_1_c1asgg.jpg' class="image-item" />
+                        <h1 class="item-heading">Hospital</h1>
+                        <button class="view-more-button" onclick="display('sectionDetailedHospital')">View More
+                            <svg width="20px" height="20px" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="facility-card-container">
+                        <img src='https://res.cloudinary.com/dwjs2oqq8/image/upload/v1686034843/download_2_tm4cu4.jpg' class="image-item" />
+                        <h1 class="item-heading">Tourism</h1>
+                        <button class="view-more-button" onclick="display('sectionDetailedTourism')">View More
+                            <svg width="20px" height="20px" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+            </div>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+        </div>
+        <div class="button-container">
+            <button class="back-button" onclick="display('sectionHome')">Back</button>
+            <button class="next-button" onclick="display('sectionFollowUs')">Next</button>
+        </div>
+
+    </div>
+    <div id="sectionFollowUs">
+        <div class="follow-us-container">
+            <p class="follow-us-section-heading">Follow Us</p>
+            <div class="icon-container">
+                <div class="follow-us-icon-container">
+                    <i class="fab fa-twitter icon"></i>
+                </div>
+                <div class="follow-us-icon-container">
+                    <i class="fab fa-instagram icon"></i>
+                </div>
+                <div class="follow-us-icon-container">
+                    <i class="fab fa-facebook icon"></i>
+                </div>
+            </div>
+            <h1 class="footer-section-mail-id">livesmart@SmartCity.com</h1>
+            <p class="footer-section-address">
+                Kandlakoya IT Park, Hyderabad, India.
+            </p>
+            <button class="footer-back-button" onclick="display('sectionAbout')">Back</button>
+        </div>
+
+        
+    </div>
+    <div id="sectionDetailedResidents">
+        <div class="main-container">
+            <div class="card-container-residents">
+                <div>
+                    <h1 class="residents-heading">My Home Constructions</h1>
+                    <p class="residents-description">Availability of <span class="styling-elements"> 2BHK & 3BHK flats</span> with a price of <span class="styling-elements">6,000/- to 8,000/- per Sqft</span> with a total Sqft of 800Sqft.</p>
+                    <h3 class="features-heading">Salient Features</h3>
+                    <ul class="list-elements">
+                        <li>Club House, Gym, Office and Garden Area</li>
+                        <li>Playing Area for Children</li>
+                        <li>Good infrastructure and Facilities</li>
+                    </ul>
+                </div>
+                <img src='https://res.cloudinary.com/dwjs2oqq8/image/upload/v1686124665/Building1_xpsw9w.webp' class="resident-image" />
+            </div>
+            <div class="card-container-residents">
+                <div>
+                    <h1 class="residents-heading">Modi Constructions</h1>
+                    <p class="residents-description">Availability of <span class="styling-elements"> 2BHK, 3BHK & 4BHK flats</span> with a price of <span class="styling-elements">7,000/- to 12,000/- per Sqft</span> with a total Sqft of 800Sqft to 1800Sqft.</p>
+                    <h3 class="features-heading">Salient Features</h3>
+                    <ul class="list-elements">
+                        <li>Club House,Office and Garden Area</li>
+                        <li>Playing Area for Children and Swimming Pool</li>
+                        <li>Good infrastructure and Facilities with Gated Community</li>
+                    </ul>
+                </div>
+                <img src='https://res.cloudinary.com/dwjs2oqq8/image/upload/v1686124665/download_i0yerx.jpg' class="resident-image" />
+            </div>
+            <div class="card-container-residents">
+                <div>
+                    <h1 class="residents-heading">Galaxy Constructions</h1>
+                    <p class="residents-description">Availability of <span class="styling-elements"> 2BHK & 3BHK flats</span> with a price of <span class="styling-elements">6,000/- to 10,000/- per Sqft</span> with a total Sqft of 1000Sqft.</p>
+                    <h3 class="features-heading">Salient Features</h3>
+                    <ul class="list-elements">
+                        <li>Gym, Office and Garden Area</li>
+                        <li>Playing Area for Children and Sports Club</li>
+                        <li>Good infrastructure & Facilities. 3km from Metro Rail</li>
+                    </ul>
+                </div>
+                <img src='https://res.cloudinary.com/dwjs2oqq8/image/upload/v1686124664/download_1_mtztlm.jpg' class="resident-image" />
+            </div>
+            <div class="card-container-residents">
+                <div>
+                    <h1 class="residents-heading">Twitzaa Gardens and Constructions</h1>
+                    <p class="residents-description">Availability of <span class="styling-elements">3BHK flats</span> with a price of <span class="styling-elements">8,000/- to 15,000/- per Sqft</span> with a total Sqft of 1700Sqft.</p>
+                    <h3 class="features-heading">Salient Features</h3>
+                    <ul class="list-elements">
+                        <li>Club House, Gym, Office and Garden Area</li>
+                        <li>Playing Area for Children, Sports Club & Swimming Pool</li>
+                        <li>Good infrastructure and Facilities</li>
+                    </ul>
+                </div>
+                <img src='https://res.cloudinary.com/dwjs2oqq8/image/upload/v1686124664/images_gjz4ea.jpg' class="resident-image" />
+            </div>
+            <button class="back-button" onclick="display('sectionAbout')">Back</button>
+        </div>
+    </div>
+
+    <div id="sectionDetailedEducation">
+      <div class="main-container">
+          <div class="card-container-residents">
+            <div>
+              <h1 class="residents-heading">IIMC Hyderabad</h1>
+              <p class="residents-description">The Indian Institute of Management and Commerce(IIMC) established four decades ago(year 1973) has to its credit some outstanding achievements in the field of Commerce Education in general and Honours course in particular at the Degree level. Eminent social workers and philanthropists and Educationalists like Sri Kothuru Seethaiah Gupta, Sri Challa Som Raj Ram, Sri C.E. Gupta, Sri Dundoo Balanarasaiah, Sri Narayana Chetty IAS(Retd.), Late Sri Veloor Lingaiah Gupta gathered together and laid solid foundation in starting this premier Institution. Members of Vysya Community in particular and admirers of Higher Education in general are greatly beholden to the Founders.</p>
+              <a href="http://www.iimchyderabad.com/">Click here to know more...</a>
+          </div>
+          <img src='http://www.iimchyderabad.com/logo.jpg' class="resident-image" />
+          </div>
+          <div class="card-container-residents">
+          <div>
+            <h1 class="residents-heading">IIT Bombay</h1>
+            <p class="residents-description">The Indian Institute of Technology Bombay (IIT Bombay) is a public research university and technical institute in Powai, Mumbai, Maharashtra, India. IIT Bombay is ranked among the most prestigious academic institutions in India, and has consistently been the most preferred choice for Indian students in STEM fields such as Computer Science.</p>
+            <a href="https://www.iitb.ac.in/">Click here to know more...</a>
+        </div>
+        <img src='https://upload.wikimedia.org/wikipedia/en/thumb/1/1d/Indian_Institute_of_Technology_Bombay_Logo.svg/330px-Indian_Institute_of_Technology_Bombay_Logo.svg.png' class="resident-image" />
+      </div>
+      <div class="card-container-residents">
+        <div>
+          <h1 class="residents-heading">AIIMS - New Delhi</h1>
+          <p class="residents-description">Creating a country imbued with a scientific culture was Jawaharlal Nehru's dream, and immediately after independence he prepared a grand design to achieve it. Among the temples of modern India which he designed, was a centre of excellence in the medical sciences. Nehru's dream was that such a centre would set the pace for medical education and research in Southeast Asia , and in this he had the wholehearted support of his Health Minister, Rajkumari Amrit Kaur.</p>
+          <a href="https://www.aiims.edu/en.html">Click here to know more...</a>
+        </div>
+        <img src="https://www.aiims.edu/images/banners/aiims.png" class="resident-image">
+      </div>
+      <div class="card-container-residents">
+        <div>
+          <h1 class="residents-heading">Drishti IAS - Jaipur</h1>
+          <p class="residents-description">Civil Services work as the backbone of the administrative machinery of the country. Indian Administrative Service (IAS), Indian Police Service (IPS), and Indian Foreign Service (IFS) are three of the most preferable services under this. IAS is most sought after among these services as IAS officers get the opportunity to serve on higher strategic positions in the Union Government and State Governments.</p>
+          <a href="https://www.drishtiias.com/">Click here to know more...</a>
+        </div>
+        <img src="https://www.drishtiias.com/frontend/img/drishti_logo_new.png" class="resident-image">
+      </div>
+    <button class="back-button" onclick="display('sectionAbout')">Back</button>
+    </div>
+    </div>
+    <div id="sectionDetailedRestaurant">
+      <div class="main-container">
+          <div class="card-container-residents">
+            <div>
+              <h1 class="residents-heading">Taj Hotel - Mumbai</h1>
+              <p class="residents-description">Taj Hotels is a chain of luxury hotels and a subsidiary of the Indian Hotels Company Limited, headquartered in Mumbai, India. Incorporated by Jamsetji Tata in 1902, the company is a part of the Tata Group. The company employed over 20,000 people in the year 2010.Ten hotels of the Taj Group are members of the Leading Hotels of the World. Two hotels of the Taj Group, namely Rambagh Palace in Jaipur and the Taj Mahal Palace Hotel in Mumbai, were ranked in 2013 by Condé Nast Traveler among its "Top 100 Hotels and Resorts in the World". Condé Nast Traveler also ranked the Taj Mahal Palace in Mumbai as number 13 on its list of "Gold Standard Hotels" in 2014.</p>
+              <a href="https://www.tajhotels.com/">Click here to know more...</a>
+            </div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Taj_Mahal_Palace_Hotel.jpg/330px-Taj_Mahal_Palace_Hotel.jpg" class="resident-image">
+          </div>
+          <div class="card-container-residents">
+            <div>
+              <h1 class="residents-heading">Taj Falaknuma Palace - Hyderabad</h1>
+              <p class="residents-description">Perched 2,000 feet above the city of Hyderabad is Taj Falaknuma Palace, a jewel amongst the clouds. Built in 1894, it is the former palace of the Nizam, rumoured to be the richest man in the world at one time. Overlooking the twinkling City of Pearls, this enchanting palace hotel in Hyderabad exudes romance and grandeur that take one back to when the Nizam ruled Hyderabad. From the moment you arrive at Taj Falaknuma Palace in a horse-drawn carriage, our palace butlers treat you like royalty. </p>
+              <a href="https://www.tajhotels.com/en-in/taj/taj-falaknuma-palace-hyderabad/">Click here to know more...</a>
+            </div>
+            <img src="https://www.tajhotels.com/content/dam/luxury/hotels/Taj_Falaknuma_Palace/images/gallery/AAG_ExteriorNight2-3x2.jpg/jcr:content/renditions/cq5dam.web.323.323.jpeg" class="resident-image">
+          </div>
+          <div class="card-container-residents">
+            <div>
+              <h1 class="residents-heading">The Oberoi Amarvilas - Agra</h1>
+              <p class="residents-description">Situated less than 2000 feet (600 meters) from the Taj Mahal – the world’s most exquisite testimony to undying love – it is easy to rekindle romance at The Oberoi Amarvilas. The hotel – one of the finest in India – stands amidst nine acres of beautifully landscaped gardens, minarets, pavilions, fountains, reflection pools and terraced lawns inspired by traditional Mughal designs. The resort has 102 exquisitely appointed rooms and suites, each with uninterrupted view of the Taj Mahal and complemented by Oberoi’s warm, personalized hospitality. Many rooms of this elegant five-story building have private terraces. The fine dining restaurants serve pan-international and authentic Mughlai cuisine.</p>
+              <a href="https://www.oberoihotels.com/hotels-in-agra-amarvilas-resort/">Click here to know more...</a>
+            </div>
+            <img src="https://www.oberoihotels.com/-/media/oberoi-hotels/website-images/offers/2021/offer-images-sep21/amarvilas/banner/amarvilas-work-from-anywhere-by-oberoi-1366x523-3.jpg?extension=webp" class="resident-image">
+          </div>
+          <div class="card-container-residents">
+            <div>
+              <h1 class="residents-heading">The Oberoi - Delhi</h1>
+              <p class="residents-description">Reopened in 2018 after an extensive refurbishment, The Oberoi New Delhi hotel reflects the spirit of India’s capital city in a harmonious blend of tradition and contemporary sophistication. The property offers spacious, light-filled rooms and suites with cutting-edge technology and sweeping views of Delhi Golf Course and Humayun’s Tomb. Restaurants include Threesixty for all-day fine dining, a contemporary Indian specialty restaurant and a rooftop Chinese restaurant. There is also an open-air rooftop bar, a wine cellar and a new cigar lounge. Wellness facilities include The Oberoi Spa, temperature-controlled indoor and outdoor swimming pools, and a 24-hour fitness center.</p>
+              <a href="https://www.oberoihotels.com/hotels-in-delhi/">Click here to know more...</a>
+            </div>
+            <img src="https://www.oberoihotels.com/-/media/oberoi-hotels/website-images/the-oberoi-new-delhi/overview/overview-banner/tond-1366x523.jpg" class="resident-image">
+          </div>
+          <button class="back-button" onclick="display('sectionAbout')">Back</button>
+      </div>
+    </div>
+    <div id="sectionDetailedTransport">
+      <div class="main-container">
+          <div class="card-container-residents">
+            <div>
+              <h1 class="residents-heading">Flight</h1>
+              <p class="residents-description">An airline is a company that provides air transport services for traveling passengers and/or freight. Airlines use aircraft to supply these services and may form partnerships or alliances with other airlines for codeshare agreements, in which they both offer and operate the same flight. Generally, airline companies are recognized with an air operating certificate or license issued by a governmental aviation body. Airlines may be scheduled or charter operators.</p>
+              <a href="https://www.makemytrip.com/flights/">Click here to know more...</a>
+            </div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Emirates_Boeing_777-200LR_A6-EWJ_%288268969066%29.jpg/300px-Emirates_Boeing_777-200LR_A6-EWJ_%288268969066%29.jpg" class="resident-image">
+          </div>
+          <div class="card-container-residents">
+            <div>
+              <h1 class="residents-heading">Railway</h1>
+              <p class="residents-description">Indian Railways (IR) is a statutory body under the ownership of the Ministry of Railways, Government of India that operates India's national railway system. It manages the fourth largest national railway system in the world by size, with a total route length of 68,043 km (42,280 mi), running track length of 102,831 km (63,896 mi) and track length of 128,305 km (79,725 mi) as of 31 March 2022. 58,812 km (36,544 mi) of all the gauge routes are electrified with 25 kV 50 Hz AC electric traction as of 1 April 2023</p>
+              <a href="https://www.irctc.co.in/nget/train-search">Click here to know more...</a>
+            </div>
+            <img src="https://www.shutterstock.com/image-vector/indian-train-vector-illustration-1714832341" class="resident-image">
+          </div>
+          <div class="card-container-residents">
+            <div>
+              <h1 class="residents-heading">Bus</h1>
+              <p class="residents-description">A bus (contracted from omnibus, with variants multibus, motorbus, autobus, etc.) is a road vehicle that carries significantly more passengers than an average car or van. It is most commonly used in public transport, but is also in use for charter purposes, or through private ownership. Although the average bus carries between 30 and 100 passengers, some buses have a capacity of up to 300 passengers. The most common type is the single-deck rigid bus, with double-decker and articulated buses carrying larger loads, and midibuses and minibuses carrying smaller loads.</p>
+              <a href="https://www.redbus.in/">Click here to know more...</a>
+            </div>
+            <img src="https://res.cloudinary.com/dki9kzqm4/image/fetch/c_scale,q_30,w_300,f_auto/https://www.trucksbuses.com/uploads/21641_c2c69137be3c4a209421644fc8230e2eTata-Cityride-LP-412-36-CX-CNG-26-Seater.jpg" class="resident-image">
+          </div>
+          <div class="card-container-residents">
+            <div>
+              <h1 class="residents-heading">Delhi Metro</h1>
+              <p class="residents-description">The Delhi Metro is a mass rapid transit (MRT) system serving Delhi and its satellite cities of Ghaziabad, Faridabad, Gurugram, Noida and Bahadurgarh, in the National Capital Region of India. The network consists of 10 colour-coded lines[1] serving 255 stations with a total length of 348.12 kilometres (216.31 mi). It is the largest and busiest metro rail system in India, and the second oldest after the Kolkata Metro. The system has a mix of underground, at-grade, and elevated stations using both broad-gauge and standard-gauge. Delhi Metro operates over 2,700 trips daily, starting at around 05:30 and ending at 23:30.</p>
+              <a href="https://www.delhimetrorail.com/ticket">Click here to know more...</a>
+            </div>
+            <img src="https://www.delhimetrorail.com/static/media/logo-passenger.d3afd408.svg" class="resident-image">
+          </div>
+          <div class="card-container-residents">
+            <div>
+              <h1 class="residents-heading">Hyderabad Metro</h1>
+              <p class="residents-description">The Hyderabad Metro is a rapid transit system, serving the city of Hyderabad, Telangana, India. It is the third longest operational metro network in India after Delhi Metro and Namma Metro (Bengaluru), and the lines are arranged in a secant model. It is funded by a public–private partnership (PPP), with the state government holding a minority equity stake. Hyderabad Metro is the world's largest elevated Metro Rail system based on DBFOT basis (Design, Built, Finance, Operate and Transfer). A special purpose vehicle company, L&T Metro Rail Hyderabad Ltd (L&TMRHL), was established by the construction company L&T to develop the Hyderabad metro rail project.</p>
+              <a href="https://www.ltmetro.com/ticketing/">Click here to know more...</a>
+            </div>
+            <img src="https://www.ltmetro.com/wp-content/uploads/2020/06/sticky_logo-1-1-1.png" class="resident-image">
+          </div>
+          <div class="card-container-residents">
+            <div>
+              <h1 class="residents-heading">Kolkata Metro</h1>
+              <p class="residents-description">The Kolkata Metro is a rapid transit system serving the city of Kolkata in West Bengal, India. It is the first operational rapid transit system in India, and the second busiest metro network in India. As of January 2023 it has three operational lines: a 31.36 km (19.49 mi) line from Dakshineswar to Kavi Subhash, a 9.1 km (5.7 mi) line from Salt Lake Sector V to Sealdah, and a 6.5 km (4.0 mi) line from Joka to Taratala, for a total of 46.96 km (29.18 mi). Three other lines are in various phases of construction. The system has a mix of underground, at-grade and elevated stations using both broad-gauge and standard-gauge tracks. Trains operate between 06:55 and 22:30 IST and the fares range from ₹5 to ₹25.</p>
+              <a href="https://mtp.indianrailways.gov.in/">Click here to know more...</a>
+            </div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Sealdah_bound_metro_approaching_Central_Park_%28cropped%29.jpg/375px-Sealdah_bound_metro_approaching_Central_Park_%28cropped%29.jpg" class="resident-image">
+          </div>
+          <button class="back-button" onclick="display('sectionAbout')">Back</button>
+      </div>
+    </div>
+
+    <div id="sectionDetailedHospital">
+      <div class="main-container">
+          <div class="card-container-residents">
+            <div>
+              <h1 class="residents-heading">Apollo Hospital - Delhi</h1>
+              <p class="residents-description">Major specialities of the hospital include Anaesthesia, Cardiology, Cardiac Surgery, Cancer, Paediatrics, Critical Care, Emergency Care, Fetal Medicine, Gastroenterology and Hepatology, Obstetrics & Gynaecology, Interventional Radiology, IVF, Liver and Kidney Transplant, Nuclear Medicine, Nephrology, Neurosciences, Ophthalmology, Orthopaedics, Otolaryngology (ENT), Paediatrics, Pediatric Surgery, Psychiatry and Clinical Psychology, Plastic & Reconstructive Surgery, Respiratory & Sleep Medicine, Rheumatology, Spine Surgery, Urology and Andrology and Vascular and Endovascular Surgery.</p>
+              <a href="https://www.vaidam.com/hospitals/indraprastha-apollo-hospital-new-delhi">Click here to know more...</a>
+            </div>
+            <img src="https://www.vaidam.com/sites/default/files/Apollo%20Hospital%20Delhi%20Lobby_0.jpg" class="resident-image">
+          </div>
+          <div class="card-container-residents">
+            <div>
+              <h1 class="residents-heading">Kokilaben Dhirubhai Ambani Hospital - Mumbai</h1>
+              <p class="residents-description">The Hospital is accredited by the Joint Commission International (JCI) and the National Accreditation Board for Hospitals & Healthcare Providers (NABH) , College of American Pathology (CAP) Accreditation, USA, National Accreditation Board for Testing and Calibration Laboratories (NABL) Accreditation, India.Kokilaben Hospital has been awarded the smartest hospital building in India by Honeywell and the Times of India for its use of power consumption control, use of natural resources, worker safety, personal protection, indoor environment quality and control energy-efficient appliances and fixtures, uninterrupted power supply, fire detection and notification, as well as surveillance and intrusion.</p>
+              <a href="https://www.vaidam.com/hospitals/kokilaben-dhirubhai-ambani-hospital-mumbai">Click here to know more...</a>
+            </div>
+            <img src="https://www.vaidam.com/sites/default/files/kokilaben_hospital_mumbai.jpg" class="resident-image">
+          </div>
+          <div class="card-container-residents">
+            <div>
+              <h1 class="residents-heading">CK Birla Hospital - Jaipur</h1>
+              <p class="residents-description">The CK Birla Healthcare Group has opened the Rukmani Birla Hospital in Jaipur, which features cutting-edge technology and advanced infrastructure. CK Birla Hospital’s three divisions in Jaipur and Kolkata have performed over 5 lakh surgeries, over 2 lakh Cath lab treatments, and over 25,300 critical cardiac surgery.
+                It is a multi-specialty hospital that provides high-quality in-patient and out-patient care. The hospital has 280 beds, as well as laminar flow operating theatres, critical care beds, and a well-equipped dialysis unit. The hospital delivers exceptional medical services supported by cutting-edge technology and highly skilled medical experts.</p>
+              <a href="https://medsurgeindia.com/hospital/ck-birla-hospital-jaipur/">Click here to know more...</a>
+            </div>
+            <img src="https://medsurgeindia.com/wp-content/w3-webp/uploads/2023/05/CK-Birla-Hospital-Jaipur-e1683363139238.pngw3.webp" class="resident-image">
+          </div>
+          <div class="card-container-residents">
+            <div>
+              <h1 class="residents-heading">KD Hospital - Ahmedabad</h1>
+              <p class="residents-description">KD Hospital (Kusum Dhirajlal Hospital) is a multi-specialty hospital at Ahmedabad’s prime location near Vaishnodevi Circle, SG Road. offers state-of-the-art facilities & treatments at a cheap cost, including vast spectrum of precise diagnostics and elegant medicines created on the philosophical superstructure of patient and ethical centricity providing humanistic dispensation. KD Hospital, which is run by the Shri Harihar Maharaj Charitable Trust, is sprawled across a vast 6 acre facility, with 315+ beds and nearly 45 super-specialties all under one roof.</p>
+              <a href="https://medsurgeindia.com/hospital/k-d-hospital/">Click here to know more...</a>
+            </div>
+            <img src="https://medsurgeindia.com/wp-content/uploads/2023/06/K.D-Hospital--e1686203262728.jpg" class="resident-image">
+          </div>
+          <div class="card-container-residents">
+            <div>
+              <h1 class="residents-heading">BGS Gleneagles Global Hospitals - Bangalore</h1>
+              <p class="residents-description">The BGS Gleneagles Global Hospitals in Bengaluru is a cutting-edge, NABH-accredited facility with competence in multi-disciplinary tertiary specialties. The hospital, which has over 500 beds, is one of the largest of its kind in Bengaluru, and it boasts 14 operating rooms, the most advanced imaging equipment, and one of the largest liver ICUs in the country. BGS Gleneagles Global Hospitals introduce cutting-edge technology that propel new and more effective treatments. Furthermore, The Hospital is internationally renowned as a centre of excellence for sophisticated clinical care. BGS Gleneagles Global Hospitals is your dependable healthcare partner.</p>
+              <a href="https://medsurgeindia.com/hospital/bgs-gleneagles-global-hospitals-bangalore/">Click here to know more...</a>
+            </div>
+            <img src="https://medsurgeindia.com/wp-content/uploads/2023/06/BGS-Gleneagles-Global-Hospitals-Bangalore-e1685952813384.jpg" class="resident-image">
+          </div>
+          <div class="card-container-residents">
+            <div>
+              <h1 class="residents-heading">Rainbow Children’s Hospital & BirthRight by Rainbow - Chennai</h1>
+              <p class="residents-description">Rainbow Hospital has 18 years of spectacular excellence in child care, women’s care, and fertility. It is India’s first corporate children’s hospital, being opened on November 14, 1999, on Children’s Day. The Rainbow has saved thousands of severely ill children and has established itself as one of the greatest children’s hospitals in the country. The hospitals strive to provide high-quality care to mothers, women, foetuses, newborns, and children, ensuring that no one is denied access to tertiary care.
+                The clinical staff at the hospital consists of a strong team of highly qualified and experienced Consultants, a dynamic team of residents and fellows, well-trained nurses and paramedics, and a highly motivated team of full- and part-time employees. Furthermore, ‘The Week’ and ‘HANSA Research’ named the hospital one of the “Five Best Children’s Hospitals in India” in 2010, 2011, and 2012.</p>
+              <a href="https://medsurgeindia.com/hospital/rainbow-childrens-hospital-birthright-by-rainbow-chennai/">Click here to know more...</a>
+            </div>
+            <img src="https://medsurgeindia.com/wp-content/uploads/2023/05/Rainbow-Childrens-Hospital-BirthRight-by-Rainbow-Chennai-e1684832020989.png" class="resident-image">
+          </div>
+          <button class="back-button" onclick="display('sectionAbout')">Back</button>
+      </div>
+    </div>
+    
+
+  <div id="sectionDetailedTourism">
+    <div class="main-container">
+      <div class="card-container-residents">
+              <div>
+                  <h1 class="residents-heading">Taj Mahal</h1>
+                  <p class="residents-description">
+                    The Taj Mahal is considered to be the greatest architectural achievement
+                    in the whole range of Indo-Islamic architecture. Its recognised
+                    architectonic beauty has a rhythmic combination of solids and voids,
+                    concave and convex and light shadow; such as arches and domes further
+                    increases the aesthetic aspect. Not a piece of architecture, as other
+                    buildings are, but the proud passions of an emperor’s love wrought in
+                    living stones.
+                  </p>
+              </div>
+              <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/tajmahal-img.png" class="resident-image" />
+          </div>
+          <div class="card-container-residents">
+              <div>
+                  <h1 class="residents-heading">Golden Temple</h1>
+                  <p class="residents-description">
+                      Amritsar is world-famous for the beautiful and highly revered Golden
+                      Temple.The Golden Temple, also known as Harmandir Sahib is a gurdwara
+                      located in the city of Amritsar, Punjab, India. There are many
+                      places to visit Near Golden Temple.
+                  </p>
+              </div>
+              <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/golden-temple-img.png" class="resident-image" />
+          </div>
+          <div class="card-container-residents">
+              <div>
+                  <h1 class="residents-description">Mysore Palace</h1>
+                  <p class="residents-description">
+                      The Mysore Palace is a historical palace and the royal residence at
+                      Mysore.Mysore Palace, also known as Amba Vilas Palace, is a historical palace and a royal residence (house). It is located in Mysore, Karnataka, India. It used to be the official residence of the Wadiyar dynasty and the seat of the Kingdom of Mysore. The palace is in the centre of Mysore, and faces the Chamundi Hills eastward. Mysore is commonly described as the 'City of Palaces', and there are seven palaces including this one. However, the Mysore Palace refers specifically to the one within the new fort.
+                  </p>
+              </div>
+              <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/mysore-palace-img.png" class="resident-image" />
+          </div>
+          <div class="card-container-residents">
+              <div>
+                  <h1 class="residents-heading">Varanasi Temple</h1>
+                  <p class="residents-description">
+                      Varanasi Temple is most famous Hindu temples dedicated to Lord Shiva.Kashi Vishwanath Temple is one of the most famous temple in Varanasi, also known as the Golden temple dedicated to the Lord Shiva. It was constructed in the year 1780 by the Maratha monarch, Maharani Ahilyabai Holkar of the Indore.
+                  </p>
+              </div>
+              <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/varanasi-temple-img.png" class="resident-image" />
+          </div>
+          <button class="back-button" onclick="display('sectionAbout')">Back</button>
+      </div>
+  </div>
+          </div>
+      </div>
+  </div>
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+
 </html>

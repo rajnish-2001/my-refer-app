@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+/* Home CSS and Media Queries */
+
+.container-1 {
+    padding: 15px;
+    background-color: #7ffaf2;
+}
+
+.home-container {
+    background-image: url('https://res.cloudinary.com/dwjs2oqq8/image/upload/v1686027907/smart_bnyf89.webp');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-size: cover;
+}
+
+.home-heading {
+    font-family: 'Bree Serif';
+    font-size: 27px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+@media screen and (min-width:768px) {
+    .home-heading {
+        font-size: 45px;
+    }
+}
+
+.home-tagline {
+    font-family: 'Bree Serif';
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+@media screen and (min-width:768px) {
+    .home-tagline {
+        font-size: 25px;
+    }
+}
+
+.home-button {
+    font-family: 'Bree Serif';
+    font-size: 15px;
+    font-weight: bold;
+    height: 40px;
+    width: 150px;
+    color: #000000;
+    background-image: linear-gradient(to right, #edf0ed, #e8a56b);
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+@media screen and (min-width:768px) {
+    .home-button {
+        font-size: 25px;
+        height: 60px;
+        width: 220px;
+    }
+}
+
+
+/* CSS and Media Queries */
+
+.common-container {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.about-heading {
+    font-family: 'Bree Serif';
+    font-size: 27px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+@media screen and (min-width:768px) {
+    .about-heading {
+        font-size: 45px;
+    }
+}
+
+.about-description {
+    font-family: 'Roboto';
+    font-size: 15px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+@media screen and (min-width:768px) {
+    .about-description {
+        font-size: 25px;
+    }
+}
+
+.facility-heading {
+    font-family: 'Bree Serif';
+    font-size: 27px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+@media screen and (min-width:768px) {
+    .facility-heading {
+        font-size: 45px;
+    }
+}
+
+.facility-para {
+    font-family: 'Roboto';
+    font-size: 15px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+@media screen and (min-width:768px) {
+    .facility-para {
+        font-size: 25px;
+    }
+}
+
+.card-container {
+    padding: 15px;
+    box-shadow: 0px 0px 2px;
+    border-radius: 7px;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.facility-card-container {
+    padding: 15px;
+    background-color: white;
+}
+
+
+.item-heading {
+    font-family: 'Bree Serif';
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.view-more-button {
+    font-family: 'Bree Serif';
+    background-color: transparent;
+    border: none;
+    outline: none;
+    margin-top: 5px;
+    align-self: flex-start;
+}
+
+.image-item {
+    border-radius: 7px;
+    height: 150px;
+    width: 150px;
+}
+
+.wrap-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.back-button {
+    font-family: 'Bree Serif';
+    font-size: 15px;
+    font-weight: bold;
+    height: 40px;
+    width: 100px;
+    color: #ffffff;
+    background-color: #000000;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+@media screen and (min-width:768px) {
+    .back-button {
+        font-size: 25px;
+        height: 60px;
+        width: 220px;
+    }
+}
+
+.next-button {
+    font-family: 'Bree Serif';
+    font-size: 15px;
+    font-weight: bold;
+    height: 40px;
+    width: 100px;
+    color: #ffffff;
+    background-color: #000000;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    align-self: flex-end;
+}
+
+@media screen and (min-width:768px) {
+    .next-button {
+        font-size: 25px;
+        height: 60px;
+        width: 220px;
+    }
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inner-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inner-heading {
+    font-family: 'Bree Serif';
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.inner-para {
+    font-family: 'Roboto';
+    font-size: 15px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.card-image {}
+
+.follow-us-section-heading {
+    text-align: center;
+    color: #183b56;
+    font-family: "Roboto";
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.follow-us-icon-container {
+    background-color: #faf7e8;
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    margin: 15px;
+    padding-top: 22px;
+    padding-bottom: 14px;
+    padding-right: 16px;
+    padding-left: 22px;
+}
+
+.icon {
+    color: #d0b200;
+    font-size: 35px;
+}
+
+.icon-container {
+    display: flex;
+}
+
+.follow-us-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.footer-section-address {
+    font-family: 'Roboto';
+    font-size: 11px;
+    font-weight: 700;
+    color: #183b56;
+    margin-top: 10px;
+}
+
+@media screen and (min-width:768px) {
+    .footer-section-address {
+        font-size: 18px;
+    }
+}
+
+.footer-section-mail-id {
+    text-align: center;
+    color: #183b56;
+    font-family: "Roboto";
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+@media screen and (min-width:768px) {
+    .footer-section-mail-id {
+        font-size: 35px;
+    }
+}
+
+.footer-back-button {
+    font-family: 'Bree Serif';
+    font-size: 15px;
+    font-weight: bold;
+    height: 40px;
+    width: 80px;
+    color: #ffffff;
+    background-color: #000000;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #7ffaf2;
+}
+
+.card-container-residents {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 9px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+@media screen and (min-width:768px) {
+    .card-container-residents {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.residents-heading {
+    color: #183b56;
+    font-family: "Roboto";
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+.residents-description {
+    color: #474a49;
+    font-family: "Roboto";
+    font-size: 18px;
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+.list-elements {
+    color: #474a49;
+    font-family: "Roboto";
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+.features-heading {
+    color: #183b56;
+    font-family: "Roboto";
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+.styling-elements {
+    color: #d17819;
+    font-family: "Bree Serif";
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.resident-image {
+    height: 100px;
+    width: 100px;
+    border-radius: 9px;
+}
+
+@media screen and (min-width:768px) {
+    .resident-image {
+        margin-right: 15px;
+        margin-left: 15px;
+        height: 300px;
+        width: 50%;
+        align-self: center;
+    }
+}
